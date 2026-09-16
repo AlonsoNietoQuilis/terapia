@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" width="600" height="720">
+  <rect width="600" height="720" fill="#d9d2e0"/>
+  <rect x="1" y="1" width="598" height="718" fill="none" stroke="#954f90" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="300" r="110" fill="#954f90" opacity="0.18"/>
+  <path d="M150 560 Q300 440 450 560 L450 720 L150 720 Z" fill="#954f90" opacity="0.18"/>
+  <text x="300" y="650" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#5f5a63">
+    Sustituir por foto de Alonso
+  </text>
+  <text x="300" y="678" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8a8590">
+    perfil.jpg &#183; 600&#215;720 recomendado
+  </text>
+</svg>
