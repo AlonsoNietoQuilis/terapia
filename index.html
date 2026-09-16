@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<aside class="journey" id="journey" aria-hidden="true">
+  <div class="journey-track" id="journeyTrack"></div>
+</aside>
+
 <header class="site-header">
   <div class="container">
     <a href="#inicio" class="brand">
@@ -34,7 +38,7 @@
 <main>
 
   <!-- HERO -->
-  <section class="hero" id="inicio">
+  <section class="hero" id="inicio" data-journey-label="Inicio">
     <div class="container">
       <div class="hero-copy">
         <span class="eyebrow">Terapia psicológica online y presencial en Bilbao</span>
@@ -48,18 +52,18 @@
         </div>
       </div>
       <div class="hero-image">
-        <!-- IMAGEN: sustituye assets/images/hero.jpg por una foto tuya o de la consulta -->
-        <img src="assets/images/hero.jpg" alt="Alonso Nieto Quilis, psicólogo">
+        <!-- IMAGEN: sustituye assets/images/hero.svg por una foto tuya o de la consulta -->
+        <img src="assets/images/hero.svg" alt="Alonso Nieto Quilis, psicólogo">
       </div>
     </div>
   </section>
 
   <!-- SOBRE MÍ -->
-  <section class="section-panel" id="sobre-mi">
-    <div class="container two-col">
+  <section class="section-panel" id="sobre-mi" data-journey-label="Sobre mí">
+    <div class="container two-col reveal">
       <div class="col-image">
-        <!-- IMAGEN: sustituye assets/images/perfil.jpg por tu foto de perfil -->
-        <img src="assets/images/perfil.jpg" alt="Alonso Nieto Quilis">
+        <!-- IMAGEN: sustituye assets/images/perfil.svg por tu foto de perfil -->
+        <img src="assets/images/perfil.svg" alt="Alonso Nieto Quilis">
       </div>
       <div class="col-text">
         <span class="eyebrow">Mi camino profesional</span>
@@ -74,8 +78,8 @@
   </section>
 
   <!-- SERVICIOS -->
-  <section id="servicios">
-    <div class="container">
+  <section id="servicios" data-journey-label="¿En qué te ayudo?">
+    <div class="container reveal">
       <span class="eyebrow">¿En qué puedo ayudarte?</span>
       <h2>Áreas de trabajo</h2>
       <div class="services-list">
@@ -160,9 +164,10 @@
   </section>
 
   <!-- MODELO TERAPÉUTICO -->
-  <section class="section-panel" id="modelo">
-    <div class="container pull-quote">
+  <section class="section-panel" id="modelo" data-journey-label="Modelo terapéutico">
+    <div class="container pull-quote reveal">
       <span class="eyebrow">Mi modelo terapéutico de trabajo — el enfoque contextual</span>
+      <span class="quote-mark" aria-hidden="true">&ldquo;</span>
       <blockquote>
         «Lo importante no es solo qué te ocurre, sino cómo has aprendido a responder a ello y si esas respuestas te están acercando o alejando de la vida que deseas vivir.»
       </blockquote>
@@ -173,8 +178,8 @@
   </section>
 
   <!-- QUÉ SE ESPERA DE TI -->
-  <section id="proceso">
-    <div class="container two-col reverse">
+  <section id="proceso" data-journey-label="Qué se espera de ti">
+    <div class="container two-col reverse reveal">
       <div class="col-image">
         <!-- IMAGEN: sustituye assets/images/consulta.svg por una foto de la consulta -->
         <img src="assets/images/consulta.svg" alt="Espacio de consulta">
@@ -190,8 +195,8 @@
   </section>
 
   <!-- PRECIOS -->
-  <section class="section-panel" id="precios">
-    <div class="container">
+  <section class="section-panel" id="precios" data-journey-label="Precios">
+    <div class="container reveal">
       <span class="eyebrow">Funcionamiento formal de la terapia</span>
       <h2>Modalidades y precios</h2>
       <p>Ofrezco servicio de terapia psicológica tanto online, como presencial en Bilbao (dirección a confirmar).</p>
@@ -222,18 +227,21 @@
   </section>
 
   <!-- RESEÑAS -->
-  <section id="resenas">
-    <div class="container">
+  <section id="resenas" data-journey-label="Reseñas">
+    <div class="container reveal">
       <span class="eyebrow">¿Cómo es la experiencia conmigo en terapia?</span>
       <h2>Lo que cuentan quienes han pasado por consulta</h2>
       <div class="testimonials">
         <div class="testimonial">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
           <p>«Estuve un corto período de tiempo haciendo terapia con Alonso, y a pesar de la diferencia generacional me sentí, desde el primer momento, escuchada y cómoda al hablar de sentimientos. Lo tendré siempre como referente. Gracias.»</p>
         </div>
         <div class="testimonial">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
           <p>«Iba buscando sanar y lo he conseguido gracias a Alonso. A quien lea esta reseña: rompe el miedo de ir a terapia, porque de verdad, merece la pena. Es un auténtico profesional con un futuro muy prometedor. Volveré, ya que esto es un camino en el que hay que ir sin prisa.»</p>
         </div>
         <div class="testimonial">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
           <p>«Tu sensibilidad y el cariño con el que me trataste... sentía muchas veces que vivías mi historia y tu emoción. También vi tus ojos brillar, y eso hacía que yo también me sintiera más cómoda.»</p>
         </div>
       </div>
@@ -241,8 +249,8 @@
   </section>
 
   <!-- CONTACTO -->
-  <section class="section-panel contact-section" id="contacto">
-    <div class="container">
+  <section class="section-panel contact-section" id="contacto" data-journey-label="Contacto">
+    <div class="container reveal">
       <div class="col-text">
         <span class="eyebrow">Comienza el cambio ya</span>
         <h2>Hablemos</h2>
@@ -267,7 +275,7 @@
       </div>
       <div class="col-image">
         <!-- IMAGEN: puedes repetir aquí una foto de perfil o de la consulta -->
-        <img src="assets/images/consulta.jpg" alt="Consulta de Alonso Nieto Quilis">
+        <img src="assets/images/consulta.svg" alt="Consulta de Alonso Nieto Quilis">
       </div>
     </div>
   </section>
