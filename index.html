@@ -4,290 +4,212 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alonso Nieto Quilis · Psicólogo</title>
-<meta name="description" content="Consulta de psicología online y presencial en Bilbao. Terapia contextual centrada en tus valores y objetivos, con Alonso Nieto Quilis.">
+<meta name="description" content="Un recorrido por la consulta de Alonso Nieto Quilis, psicólogo. Terapia online y presencial en Bilbao.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<aside class="journey" id="journey" aria-hidden="true">
-  <div class="journey-track" id="journeyTrack"></div>
-</aside>
+<a class="brand-fixed" href="#inicio">
+  <span class="name">Alonso Nieto Quilis</span>
+  <span class="role">psicólogo</span>
+</a>
 
-<header class="site-header">
-  <div class="container">
-    <a href="#inicio" class="brand">
-      <span class="brand-name">Alonso Nieto Quilis</span>
-      <span class="brand-role">Psicólogo</span>
-    </a>
-    <nav class="nav" id="siteNav">
-      <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#servicios">¿En qué te ayudo?</a></li>
-        <li><a href="#modelo">Modelo terapéutico</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#resenas">Reseñas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <a class="btn btn-primary" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener">Reservar cita</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">Menú</button>
-  </div>
-</header>
+<a class="floating-whatsapp" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.2 1.3 4.9 1.3h.2c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18h-.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-2.9.8.8-2.8-.2-.3C4 15 3.6 13.5 3.6 12 3.6 7.4 7.4 3.6 12 3.6S20.4 7.4 20.4 12 16.6 20 12 20z"/></svg>
+</a>
+
+<div class="camino-thread" id="caminoThread" aria-hidden="true"></div>
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio" data-journey-label="Inicio">
-    <div class="container">
-      <div class="hero-copy">
-        <span class="eyebrow">Terapia psicológica online y presencial en Bilbao</span>
-        <h1>Un espacio seguro para entender lo que te preocupa</h1>
-        <p>Concibo el espacio terapéutico como un lugar seguro, donde tú eres el/la protagonista. En este espacio, le daremos sentido a aquello que te preocupa, explorando tanto tu situación actual como tu historia de vida para comprender el contexto en el que surge tu malestar.</p>
-        <p>A partir de ahí, teniendo presentes tus objetivos y aquello que es importante para ti, trabajaremos para acercarte a la vida que deseas construir. Sin perder de vista que las emociones difíciles forman parte de la experiencia humana, aprenderemos a relacionarnos con ellas de una manera que no te impida avanzar.</p>
-        <p class="hero-question">¿Me permites acompañarte en el camino de tu vida?</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
-          <a class="btn btn-ghost" href="https://www.instagram.com/psi.alonso?stkn=YjgwdDA2aWk3OG1r&utm_source=qr" target="_blank" rel="noopener">Seguir en Instagram</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <!-- IMAGEN: sustituye assets/images/hero.svg por una foto tuya o de la consulta -->
-        <img src="assets/images/hero.svg" alt="Alonso Nieto Quilis, psicólogo">
+  <!-- PARADA 1 — INICIO -->
+  <section class="stop hero-stop" id="inicio" data-camino="Inicio">
+    <div class="hero-card">
+      <span class="tag">Terapia online y presencial en Bilbao</span>
+      <h1>Un espacio seguro para entender lo que te preocupa</h1>
+      <p class="lead">Concibo el espacio terapéutico como un lugar seguro, donde tú eres el/la protagonista. Le daremos sentido a aquello que te preocupa, explorando tu situación actual y tu historia de vida, para acercarte a la vida que deseas construir.</p>
+      <span class="hero-question">¿Me permites acompañarte en el camino de tu vida?</span>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/psi.alonso?stkn=YjgwdDA2aWk3OG1r&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
+    <span class="scroll-hint">Desliza para empezar el camino ↓</span>
   </section>
 
-  <!-- SOBRE MÍ -->
-  <section class="section-panel" id="sobre-mi" data-journey-label="Sobre mí">
-    <div class="container two-col reveal">
-      <div class="col-image">
-        <!-- IMAGEN: sustituye assets/images/perfil.svg por tu foto de perfil -->
-        <img src="assets/images/perfil.svg" alt="Alonso Nieto Quilis">
-      </div>
-      <div class="col-text">
-        <span class="eyebrow">Mi camino profesional</span>
-        <h2>Formación continua al servicio de cada proceso</h2>
-        <p>Mi pasión por entender el mundo en general, y el comportamiento humano en particular, me llevaron a estudiar psicología en la Universidad Complutense de Madrid, con el ánimo de comprender por qué somos cómo somos, por qué nos comportamos como lo hacemos.</p>
-        <p>Esta insaciable curiosidad me llevó a adentrarme en el Análisis de Conducta, como forma de acercarme minuciosamente al estudio del funcionamiento humano. Lo hice gracias al Máster de Análisis de Conducta de la Universidad Autónoma de Madrid, donde también cursé el Máster de Psicología General Sanitaria, gracias al cual obtuve la habilitación necesaria para ejercer como terapeuta.</p>
-        <p>Desde entonces he mantenido un firme compromiso con mi formación continua. Además de actualizarme de manera constante, he ampliado mi especialización con el Curso de Experto en Habilidades Terapéuticas en Terapia de Aceptación y Compromiso (ACT), entre otras formaciones orientadas a ofrecer una atención cada vez más rigurosa y eficaz.</p>
-        <p>Más allá de la formación, considero que la calidad del proceso terapéutico se sostiene tanto en el conocimiento técnico como en la relación que se construye durante el acompañamiento. La curiosidad por comprender cada historia y el compromiso con quienes confían en mí guían mi forma de trabajar.</p>
-        <p>Disfruto profundamente de cada sesión y continúo aprendiendo con cada persona que acompaño. Mi objetivo es ofrecer un espacio de confianza desde el que podamos avanzar juntos hacia una vida más plena y coherente con aquello que realmente es importante para ti.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section id="servicios" data-journey-label="¿En qué te ayudo?">
-    <div class="container reveal">
-      <span class="eyebrow">¿En qué puedo ayudarte?</span>
-      <h2>Áreas de trabajo</h2>
-      <div class="services-list">
-
-        <div class="service-item">
-          <h3>Ansiedad generalizada y específica</h3>
-          <p>La ansiedad puede llegar a ocupar demasiado espacio en tu vida, ya sea en forma de preocupación constante o asociada a situaciones concretas, como hablar en público, relacionarte con otras personas, conducir o volar. Trabajaremos para que deje de marcar el rumbo y puedas volver a dirigir tus pasos hacia aquello que es importante para ti.</p>
+  <!-- PARADA 2 — SOBRE MÍ -->
+  <section class="stop" id="sobre-mi" data-camino="Sobre mí">
+    <div class="postcard" data-flip>
+      <div class="postcard-inner">
+        <div class="postcard-face front">
+          <div class="card-image"><img src="assets/images/perfil.svg" alt="Alonso Nieto Quilis"></div>
+          <span class="tag">Mi camino profesional</span>
+          <h2>Alonso Nieto Quilis</h2>
+          <p>Psicólogo sanitario · Enfoque contextual</p>
+          <span class="flip-hint">toca la postal para leer mi trayectoria →</span>
         </div>
-
-        <div class="service-item">
-          <h3>Bajo estado de ánimo / depresión</h3>
-          <p>Cuando el desánimo o la apatía se instalan, es fácil desconectar de aquello que da sentido a la vida. La terapia busca ayudarte a recuperar esa conexión, incluso en presencia del malestar.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Baja autoestima</h3>
-          <p>Más que aprender a gustarte siempre, trabajaremos para transformar la relación que mantienes contigo y que tu autocrítica deje de limitar la vida que quieres construir.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Desarrollo personal</h3>
-          <p>La terapia no solo sirve para aliviar el sufrimiento, sino también para conocerte mejor, desarrollar nuevas habilidades y vivir de una manera más coherente con tus valores.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Duelo</h3>
-          <p>Toda pérdida implica adaptarse a una nueva realidad. Te acompañaré para atravesar ese proceso respetando tu ritmo y haciendo espacio a las emociones que aparezcan.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Fobias</h3>
-          <p>El miedo puede acabar reduciendo tu mundo. Trabajaremos para recuperar la libertad de acercarte a aquellas situaciones que hoy evitas.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Hipocondría</h3>
-          <p>La preocupación constante por la salud puede hacer que la vida gire en torno a la incertidumbre. Aprenderemos a relacionarnos de otra manera con esos pensamientos y sensaciones.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Nuevas tecnologías</h3>
-          <p>Cuando el uso de la tecnología deja de ser una elección y empieza a dirigir tu tiempo y tu atención, podemos trabajar para recuperar un equilibrio más saludable.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Psicología deportiva</h3>
-          <p>El rendimiento también depende de cómo nos relacionamos con la presión, el error o la exigencia. Entrenaremos habilidades psicológicas para competir con mayor flexibilidad y eficacia.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Problemas en el contexto laboral</h3>
-          <p>El trabajo puede convertirse en una fuente importante de malestar. Exploraremos nuevas formas de afrontar esas dificultades sin perder de vista aquello que es importante para ti.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Problemas de pareja (terapia individual)</h3>
-          <p>Las relaciones reflejan muchos de nuestros patrones de comportamiento. Comprenderlos te permitirá construir vínculos más sanos y acordes con lo que buscas.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Terapia de pareja</h3>
-          <p>La terapia ofrece un espacio para comprender las dificultades de la relación, mejorar la comunicación y encontrar nuevas maneras de afrontar juntos los conflictos.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Trastornos de la Conducta Alimentaria</h3>
-          <p>La relación con la comida y con el propio cuerpo puede llegar a ocupar demasiado espacio. Trabajaremos para recuperar una vida más libre, flexible y guiada por tus valores.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Terapia sexual</h3>
-          <p>Las dificultades relacionadas con la sexualidad pueden generar malestar, inseguridad o afectar a la relación de pareja. La terapia ofrece un espacio seguro y libre de juicios para comprender lo que está ocurriendo y construir una vivencia de la sexualidad más satisfactoria y acorde con tus necesidades.</p>
-        </div>
-
-        <div class="service-item">
-          <h3>Trauma y estrés postraumático</h3>
-          <p>Las experiencias difíciles no tienen por qué definir tu presente. La terapia te ayudará a integrar lo vivido y a avanzar hacia la vida que deseas construir.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- MODELO TERAPÉUTICO -->
-  <section class="section-panel" id="modelo" data-journey-label="Modelo terapéutico">
-    <div class="container pull-quote reveal">
-      <span class="eyebrow">Mi modelo terapéutico de trabajo — el enfoque contextual</span>
-      <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-      <blockquote>
-        «Lo importante no es solo qué te ocurre, sino cómo has aprendido a responder a ello y si esas respuestas te están acercando o alejando de la vida que deseas vivir.»
-      </blockquote>
-      <p style="max-width: 720px; margin-inline: auto;">El trabajo terapéutico desde una visión contextual no entiende el malestar como algo que aparece porque sí o como un conjunto de síntomas que simplemente hay que eliminar. Para comprender lo que te ocurre es necesario conocer tu historia, las circunstancias que has vivido y la función que cumplen las formas en las que has aprendido a afrontar las dificultades.</p>
-      <p style="max-width: 720px; margin-inline: auto;">Muchas de esas estrategias fueron útiles en algún momento e incluso te ayudaron a salir adelante. Sin embargo, es posible que hoy estén manteniendo el problema o limitando la vida que quieres construir.</p>
-      <p style="max-width: 720px; margin-inline: auto;">Por eso, en terapia no solo buscaremos aliviar el sufrimiento, sino también comprender cómo funciona, desarrollar nuevas formas de responder a las dificultades y ayudarte a construir una vida más flexible, plena y coherente con aquello que es importante para ti.</p>
-    </div>
-  </section>
-
-  <!-- QUÉ SE ESPERA DE TI -->
-  <section id="proceso" data-journey-label="Qué se espera de ti">
-    <div class="container two-col reverse reveal">
-      <div class="col-image">
-        <!-- IMAGEN: sustituye assets/images/consulta.svg por una foto de la consulta -->
-        <img src="assets/images/consulta.svg" alt="Espacio de consulta">
-      </div>
-      <div class="col-text">
-        <span class="eyebrow">¿Qué se espera de ti como paciente?</span>
-        <h2>Un trabajo en equipo</h2>
-        <p>La terapia es un trabajo en equipo y tú eres quien desempeña el papel principal. Tu implicación, tanto dentro como fuera de las sesiones, será fundamental para favorecer el cambio. Mi labor consiste en acompañarte, ayudarte a descubrir tus propios recursos y ofrecerte las herramientas necesarias para avanzar.</p>
-        <p>También espero que podamos construir una relación basada en la confianza, la honestidad y la colaboración. Quiero que puedas expresar con libertad cómo estás viviendo la terapia, qué te ayuda, qué dudas tienes o si hay algo que no termina de encajarte. Hablar de ello forma parte del proceso terapéutico.</p>
-        <p>Es normal que durante la terapia aparezcan emociones difíciles o momentos de incertidumbre. Avanzaremos a tu ritmo, entendiendo que el cambio rara vez es lineal y que cada paso, incluso los más difíciles, puede formar parte del camino hacia una vida más plena.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRECIOS -->
-  <section class="section-panel" id="precios" data-journey-label="Precios">
-    <div class="container reveal">
-      <span class="eyebrow">Funcionamiento formal de la terapia</span>
-      <h2>Modalidades y precios</h2>
-      <p>Ofrezco servicio de terapia psicológica tanto online, como presencial en Bilbao (dirección a confirmar).</p>
-
-      <div class="pricing-table">
-        <div class="price-card">
-          <div class="amount">60&nbsp;€</div>
-          <div class="unit">sesión online &middot; ~55 min</div>
-          <p>Bono de 4 sesiones por 220&nbsp;€.</p>
-        </div>
-        <div class="price-card">
-          <div class="amount">65&nbsp;€</div>
-          <div class="unit">sesión presencial en Bilbao &middot; ~55 min</div>
-        </div>
-        <div class="price-card">
-          <div class="amount">85&nbsp;€</div>
-          <div class="unit">sesión de terapia de pareja</div>
-        </div>
-      </div>
-
-      <div class="online-note">
-        <h3>¿La terapia online funciona?</h3>
-        <p>La terapia online no es un impedimento para que la terapia sea eficaz y de calidad. Además, permite acceder a la ayuda profesional desde cualquier lugar, ahorrando desplazamientos y facilitando la continuidad del proceso, incluso cuando cambian tus circunstancias.</p>
-        <p>Lo más importante no es el lugar desde el que nos conectemos, sino el vínculo terapéutico que construyamos y el trabajo que realicemos juntos durante el proceso.</p>
-        <p style="margin-bottom:0;">Muchas personas llegan con dudas sobre la terapia online y, tras unas pocas sesiones, descubren que la pantalla deja de ser importante. Lo que realmente marca la diferencia es sentirse escuchado, comprendido y acompañado.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESEÑAS -->
-  <section id="resenas" data-journey-label="Reseñas">
-    <div class="container reveal">
-      <span class="eyebrow">¿Cómo es la experiencia conmigo en terapia?</span>
-      <h2>Lo que cuentan quienes han pasado por consulta</h2>
-      <div class="testimonials">
-        <div class="testimonial">
-          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-          <p>«Estuve un corto período de tiempo haciendo terapia con Alonso, y a pesar de la diferencia generacional me sentí, desde el primer momento, escuchada y cómoda al hablar de sentimientos. Lo tendré siempre como referente. Gracias.»</p>
-        </div>
-        <div class="testimonial">
-          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-          <p>«Iba buscando sanar y lo he conseguido gracias a Alonso. A quien lea esta reseña: rompe el miedo de ir a terapia, porque de verdad, merece la pena. Es un auténtico profesional con un futuro muy prometedor. Volveré, ya que esto es un camino en el que hay que ir sin prisa.»</p>
-        </div>
-        <div class="testimonial">
-          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-          <p>«Tu sensibilidad y el cariño con el que me trataste... sentía muchas veces que vivías mi historia y tu emoción. También vi tus ojos brillar, y eso hacía que yo también me sintiera más cómoda.»</p>
+        <div class="postcard-face back">
+          <button class="back-nav">← volver</button>
+          <span class="tag">Mi camino profesional</span>
+          <h2>Formación continua</h2>
+          <p>Mi pasión por entender el mundo en general, y el comportamiento humano en particular, me llevó a estudiar psicología en la Universidad Complutense de Madrid.</p>
+          <p>Esa curiosidad me llevó al Análisis de Conducta, gracias al Máster de Análisis de Conducta de la Universidad Autónoma de Madrid, donde también cursé el Máster de Psicología General Sanitaria, con el que obtuve la habilitación para ejercer como terapeuta.</p>
+          <p>Desde entonces mantengo un firme compromiso con mi formación continua: Curso de Experto en Habilidades Terapéuticas en Terapia de Aceptación y Compromiso (ACT), entre otras.</p>
+          <p>Considero que la calidad del proceso terapéutico se sostiene tanto en el conocimiento técnico como en la relación que construimos durante el acompañamiento. Disfruto profundamente de cada sesión y continúo aprendiendo con cada persona que acompaño.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section class="section-panel contact-section" id="contacto" data-journey-label="Contacto">
-    <div class="container reveal">
-      <div class="col-text">
-        <span class="eyebrow">Comienza el cambio ya</span>
-        <h2>Hablemos</h2>
-        <p>Contestaré a la máxima brevedad posible para que podamos agendar una cita, conocernos y comenzar el proceso de cambio hacia esa vida que quieres vivir.</p>
-
-        <div class="contact-methods">
-          <a class="contact-method" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.2 1.3 4.9 1.3h.2c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18h-.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-2.9.8.8-2.8-.2-.3C4 15 3.6 13.5 3.6 12 3.6 7.4 7.4 3.6 12 3.6S20.4 7.4 20.4 12 16.6 20 12 20z"/></svg>
-            <span class="label"><strong>WhatsApp</strong><span>+34 630 77 08 64</span></span>
-          </a>
-
-          <a class="contact-method" href="mailto:psi.alonsonieto@gmail.com">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            <span class="label"><strong>Correo</strong><span>psi.alonsonieto@gmail.com</span></span>
-          </a>
-
-          <a class="contact-method" href="https://www.instagram.com/psi.alonso?stkn=YjgwdDA2aWk3OG1r&utm_source=qr" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.1 0 4.1.1 1 .1 1.7.2 2.3.5.6.3 1.1.6 1.6 1.1.5.5.9 1 1.1 1.6.2.6.4 1.3.5 2.3.1 1 .1 1.4.1 4.1s0 3.1-.1 4.1c-.1 1-.2 1.7-.5 2.3-.3.6-.6 1.1-1.1 1.6-.5.5-1 .9-1.6 1.1-.6.2-1.3.4-2.3.5-1 .1-1.4.1-4.1.1s-3.1 0-4.1-.1c-1-.1-1.7-.2-2.3-.5-.6-.3-1.1-.6-1.6-1.1-.5-.5-.9-1-1.1-1.6-.2-.6-.4-1.3-.5-2.3C2 15.1 2 14.7 2 12s0-3.1.1-4.1c.1-1 .2-1.7.5-2.3.3-.6.6-1.1 1.1-1.6.5-.5 1-.9 1.6-1.1.6-.2 1.3-.4 2.3-.5C8.9 2 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.3a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.2-8.5a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/></svg>
-            <span class="label"><strong>Instagram</strong><span>@psi.alonso &middot; contenido de divulgación</span></span>
-          </a>
+  <!-- PARADA 3 — EN QUÉ TE AYUDO -->
+  <section class="stop" id="servicios" data-camino="¿En qué te ayudo?">
+    <div class="postcard" data-flip>
+      <div class="postcard-inner">
+        <div class="postcard-face front">
+          <span class="tag">¿En qué puedo ayudarte?</span>
+          <h2>15 áreas de trabajo</h2>
+          <p>Desde la ansiedad hasta el trauma, cada proceso parte de tu historia, no de una etiqueta.</p>
+          <span class="flip-hint">toca la postal para ver el listado →</span>
+        </div>
+        <div class="postcard-face back">
+          <button class="back-nav">← volver</button>
+          <span class="tag">Áreas de trabajo</span>
+          <div class="list-compact">
+            <div class="item"><strong>Ansiedad generalizada y específica</strong><span>Preocupación constante o asociada a situaciones concretas: hablar en público, relacionarte, conducir, volar.</span></div>
+            <div class="item"><strong>Bajo estado de ánimo / depresión</strong><span>Recuperar la conexión con lo que da sentido a la vida, incluso en presencia del malestar.</span></div>
+            <div class="item"><strong>Baja autoestima</strong><span>Transformar la relación contigo mismo/a, no solo "gustarte más".</span></div>
+            <div class="item"><strong>Desarrollo personal</strong><span>Conocerte mejor y vivir de forma más coherente con tus valores.</span></div>
+            <div class="item"><strong>Duelo</strong><span>Adaptarse a una nueva realidad, respetando tu ritmo.</span></div>
+            <div class="item"><strong>Fobias</strong><span>Recuperar la libertad de acercarte a lo que hoy evitas.</span></div>
+            <div class="item"><strong>Hipocondría</strong><span>Relacionarte de otra manera con la preocupación por la salud.</span></div>
+            <div class="item"><strong>Nuevas tecnologías</strong><span>Recuperar el equilibrio cuando el uso deja de ser una elección.</span></div>
+            <div class="item"><strong>Psicología deportiva</strong><span>Competir con mayor flexibilidad frente a la presión y el error.</span></div>
+            <div class="item"><strong>Problemas en el contexto laboral</strong><span>Afrontar el malestar laboral sin perder de vista lo importante.</span></div>
+            <div class="item"><strong>Problemas de pareja (terapia individual)</strong><span>Comprender tus patrones para construir vínculos más sanos.</span></div>
+            <div class="item"><strong>Terapia de pareja</strong><span>Mejorar la comunicación y afrontar juntos los conflictos.</span></div>
+            <div class="item"><strong>Trastornos de la Conducta Alimentaria</strong><span>Una relación más libre y flexible con la comida y el cuerpo.</span></div>
+            <div class="item"><strong>Terapia sexual</strong><span>Un espacio seguro y sin juicios para tu vivencia de la sexualidad.</span></div>
+            <div class="item"><strong>Trauma y estrés postraumático</strong><span>Integrar lo vivido y avanzar hacia la vida que deseas construir.</span></div>
+          </div>
         </div>
       </div>
-      <div class="col-image">
-        <!-- IMAGEN: puedes repetir aquí una foto de perfil o de la consulta -->
-        <img src="assets/images/consulta.svg" alt="Consulta de Alonso Nieto Quilis">
+    </div>
+  </section>
+
+  <!-- PARADA 4 — MODELO TERAPÉUTICO + QUÉ SE ESPERA DE TI -->
+  <section class="stop" id="modelo" data-camino="Modelo terapéutico">
+    <div class="postcard" data-flip>
+      <div class="postcard-inner">
+        <div class="postcard-face front">
+          <span class="tag">El enfoque contextual</span>
+          <h2>No es solo qué te ocurre</h2>
+          <p>Sino cómo has aprendido a responder, y si esas respuestas te acercan o te alejan de la vida que quieres vivir.</p>
+          <span class="flip-hint">toca la postal para leer más →</span>
+        </div>
+        <div class="postcard-face back">
+          <button class="back-nav">← volver</button>
+          <span class="tag">Mi modelo de trabajo</span>
+          <h2>Enfoque contextual</h2>
+          <p>El malestar no aparece porque sí, ni es solo un conjunto de síntomas que eliminar. Para comprenderlo hace falta conocer tu historia, tus circunstancias, y la función de las formas en que has aprendido a afrontar las dificultades.</p>
+          <p>Muchas de esas estrategias fueron útiles en su momento. Hoy pueden estar manteniendo el problema. Por eso, en terapia no solo buscamos aliviar el sufrimiento, también comprender cómo funciona y construir una vida más flexible y coherente con lo importante para ti.</p>
+          <h3>¿Qué se espera de ti?</h3>
+          <p>La terapia es un trabajo en equipo: tú eres quien desempeña el papel principal. Mi labor es acompañarte, ayudarte a descubrir tus propios recursos y ofrecerte herramientas para avanzar.</p>
+          <p>Es normal que aparezcan emociones difíciles o incertidumbre. Avanzaremos a tu ritmo — el cambio rara vez es lineal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARADA 5 — PRECIOS -->
+  <section class="stop" id="precios" data-camino="Precios">
+    <div class="postcard" data-flip>
+      <div class="postcard-inner">
+        <div class="postcard-face front">
+          <span class="tag">Funcionamiento formal</span>
+          <h2>Modalidades y precios</h2>
+          <p>Online, presencial en Bilbao, o en pareja.</p>
+          <span class="flip-hint">toca la postal para ver el detalle →</span>
+        </div>
+        <div class="postcard-face back">
+          <button class="back-nav">← volver</button>
+          <span class="tag">Precios</span>
+          <div class="price-line"><span>Sesión online (~55 min)</span><span class="amount">60&nbsp;€</span></div>
+          <div class="price-line"><span>Bono de 4 sesiones online</span><span class="amount">220&nbsp;€</span></div>
+          <div class="price-line"><span>Sesión presencial en Bilbao</span><span class="amount">65&nbsp;€</span></div>
+          <div class="price-line"><span>Sesión de terapia de pareja</span><span class="amount">85&nbsp;€</span></div>
+          <h3>¿La terapia online funciona?</h3>
+          <p>No es un impedimento para que sea eficaz y de calidad. Permite acceder a la ayuda profesional desde cualquier lugar y facilita la continuidad, incluso cuando cambian tus circunstancias.</p>
+          <p>Lo que marca la diferencia no es el lugar desde el que nos conectamos, sino el vínculo terapéutico y el trabajo que hacemos juntos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARADA 6 — RESEÑAS -->
+  <section class="stop" id="resenas" data-camino="Reseñas">
+    <div class="postcard" data-flip>
+      <div class="postcard-inner">
+        <div class="postcard-face front">
+          <span class="tag">¿Cómo es la experiencia conmigo?</span>
+          <h2>Lo que cuentan mis pacientes</h2>
+          <p>Tres testimonios reales de personas que han pasado por consulta.</p>
+          <span class="flip-hint">toca la postal para leerlos →</span>
+        </div>
+        <div class="postcard-face back">
+          <button class="back-nav">← volver</button>
+          <span class="tag">Reseñas</span>
+          <div class="testimonial-block">
+            <span class="quote-mark">&ldquo;</span>
+            <p>Estuve un corto período de tiempo haciendo terapia con Alonso, y a pesar de la diferencia generacional me sentí, desde el primer momento, escuchada y cómoda al hablar de sentimientos. Lo tendré siempre como referente.</p>
+          </div>
+          <div class="testimonial-block">
+            <span class="quote-mark">&ldquo;</span>
+            <p>Iba buscando sanar y lo he conseguido gracias a Alonso. Rompe el miedo de ir a terapia, porque de verdad, merece la pena. Es un auténtico profesional con un futuro muy prometedor.</p>
+          </div>
+          <div class="testimonial-block">
+            <span class="quote-mark">&ldquo;</span>
+            <p>Tu sensibilidad y el cariño con el que me trataste... sentía muchas veces que vivías mi historia y tu emoción. También vi tus ojos brillar, y eso hacía que yo también me sintiera más cómoda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARADA 7 — CONTACTO -->
+  <section class="stop contact-stop" id="contacto" data-camino="Contacto">
+    <div class="postcard">
+      <div class="postcard-inner">
+        <div class="postcard-face front" style="cursor:default;">
+          <span class="tag">Comienza el cambio ya</span>
+          <h2>Hablemos</h2>
+          <p>Contestaré a la máxima brevedad posible para que podamos agendar una cita, conocernos y comenzar el proceso hacia esa vida que quieres vivir.</p>
+          <div class="contact-methods">
+            <a class="contact-method" href="https://wa.me/34630770864?text=Hola%20Alonso%2C%20me%20gustar%C3%ADa%20agendar%20una%20primera%20cita" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.2 1.3 4.9 1.3h.2c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18h-.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-2.9.8.8-2.8-.2-.3C4 15 3.6 13.5 3.6 12 3.6 7.4 7.4 3.6 12 3.6S20.4 7.4 20.4 12 16.6 20 12 20z"/></svg>
+              <span class="label"><strong>WhatsApp</strong><span>+34 630 77 08 64</span></span>
+            </a>
+            <a class="contact-method" href="mailto:psi.alonsonieto@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span class="label"><strong>Correo</strong><span>psi.alonsonieto@gmail.com</span></span>
+            </a>
+            <a class="contact-method" href="https://www.instagram.com/psi.alonso?stkn=YjgwdDA2aWk3OG1r&utm_source=qr" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.1 0 4.1.1 1 .1 1.7.2 2.3.5.6.3 1.1.6 1.6 1.1.5.5.9 1 1.1 1.6.2.6.4 1.3.5 2.3.1 1 .1 1.4.1 4.1s0 3.1-.1 4.1c-.1 1-.2 1.7-.5 2.3-.3.6-.6 1.1-1.1 1.6-.5.5-1 .9-1.6 1.1-.6.2-1.3.4-2.3.5-1 .1-1.4.1-4.1.1s-3.1 0-4.1-.1c-1-.1-1.7-.2-2.3-.5-.6-.3-1.1-.6-1.6-1.1-.5-.5-.9-1-1.1-1.6-.2-.6-.4-1.3-.5-2.3C2 15.1 2 14.7 2 12s0-3.1.1-4.1c.1-1 .2-1.7.5-2.3.3-.6.6-1.1 1.1-1.6.5-.5 1-.9 1.6-1.1.6-.2 1.3-.4 2.3-.5C8.9 2 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.3a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.2-8.5a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/></svg>
+              <span class="label"><strong>Instagram</strong><span>@psi.alonso</span></span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Alonso Nieto Quilis · Psicólogo Sanitario</p>
-  </div>
-</footer>
+<p style="text-align:center; font-size:0.78rem; color:var(--ink-faint); padding:20px 0 32px;">
+  © <span id="year"></span> Alonso Nieto Quilis · Psicólogo Sanitario
+</p>
 
 <script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
