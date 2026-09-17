@@ -1,112 +1,72 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Menú móvil
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('siteNav');
-
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-      toggle.textContent = isOpen ? 'Cerrar' : 'Menú';
-    });
-
-    nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = 'Menú';
-      });
-    });
-  }
-
-  // Año en el footer
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Revelado en scroll (una sola vez por elemento)
-  const revealEls = document.querySelectorAll('.reveal');
-  if (revealEls.length && !reduceMotion && 'IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          revealObserver.unobserve(entry.target);
-        }
+  // --- Voltear postales ---
+  document.querySelectorAll('.postcard[data-flip]').forEach((postcard) => {
+    const front = postcard.querySelector('.postcard-face.front');
+    const backNav = postcard.querySelector('.back-nav');
+
+    if (front) {
+      front.addEventListener('click', () => {
+        postcard.classList.add('is-flipped');
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+    }
+    if (backNav) {
+      backNav.addEventListener('click', (e) => {
+        e.stopPropagation();
+        postcard.classList.remove('is-flipped');
+      });
+    }
+  });
 
-    revealEls.forEach((el) => revealObserver.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
+  // --- Hilo / camino central: progreso + puntos por parada ---
+  const thread = document.getElementById('caminoThread');
+  const stops = Array.from(document.querySelectorAll('.stop'));
 
-  // Camino: hilo de progreso vertical con puntos por sección
-  const journeyTrack = document.getElementById('journeyTrack');
-  const journey = document.getElementById('journey');
-  const sections = Array.from(document.querySelectorAll('main section[id]'));
-
-  if (journeyTrack && journey && sections.length) {
-    const dots = sections.map((section) => {
+  if (thread && stops.length) {
+    const dots = stops.map((stop) => {
       const dot = document.createElement('button');
       dot.type = 'button';
-      dot.className = 'journey-dot';
-      dot.style.top = '0px';
-      dot.setAttribute('aria-label', section.dataset.journeyLabel || section.id);
-
-      const label = document.createElement('span');
-      label.className = 'journey-label';
-      label.textContent = section.dataset.journeyLabel || section.id;
-
+      dot.className = 'camino-dot';
+      dot.setAttribute('aria-label', stop.dataset.camino || 'Sección');
       dot.addEventListener('click', () => {
-        section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        stop.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
       });
-
-      journeyTrack.appendChild(dot);
-      journeyTrack.appendChild(label);
-      return { section, dot };
+      thread.appendChild(dot);
+      return { stop, dot };
     });
 
     function layoutDots() {
-      const trackHeight = journeyTrack.offsetHeight;
-      const first = sections[0].offsetTop;
-      const last = sections[sections.length - 1].offsetTop;
+      const threadRect = thread.getBoundingClientRect();
+      const first = stops[0].offsetTop;
+      const last = stops[stops.length - 1].offsetTop;
       const span = Math.max(last - first, 1);
 
-      dots.forEach(({ section, dot }) => {
-        const ratio = (section.offsetTop - first) / span;
-        dot.style.top = `${ratio * trackHeight}px`;
+      dots.forEach(({ stop, dot }) => {
+        const ratio = (stop.offsetTop - first) / span;
+        dot.style.top = `${ratio * threadRect.height}px`;
       });
     }
 
     function updateProgress() {
       const scrollTop = window.scrollY;
-      const viewMid = scrollTop + window.innerHeight * 0.35;
+      const viewMid = scrollTop + window.innerHeight * 0.5;
 
       let activeIndex = 0;
-      sections.forEach((section, i) => {
-        if (section.offsetTop <= viewMid) activeIndex = i;
+      stops.forEach((stop, i) => {
+        if (stop.offsetTop <= viewMid) activeIndex = i;
       });
-
       dots.forEach(({ dot }, i) => dot.classList.toggle('is-active', i === activeIndex));
 
       const docHeight = document.body.scrollHeight - window.innerHeight;
-      const progress = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
-      journeyTrack.style.setProperty('--progress', `${progress}%`);
+      const progress = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+      thread.style.setProperty('--progress', `${progress}%`);
     }
 
-    journeyTrack.style.height = '260px';
     layoutDots();
     updateProgress();
-
-    window.addEventListener('resize', () => {
-      layoutDots();
-      updateProgress();
-    });
+    window.addEventListener('resize', () => { layoutDots(); updateProgress(); });
     window.addEventListener('scroll', updateProgress, { passive: true });
   }
 });
